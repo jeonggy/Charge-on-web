@@ -1,0 +1,177 @@
+// Import CoreUI styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// Some temp fixes
+@import "fixes";
+
+.customtable {
+    font-size: 20px;
+    color:'#123456';
+}
+.customtable td{
+    font-size: 10px;
+    color:'#123456';
+}
+.hover1 {
+    background-color: #f8f8f8;
+}
+
+.hover1:hover {
+    cursor: pointer;
+background-color: rgb(233, 233, 233);
+}
+
+.c-sidebar{
+    background-color: #fdfdfd;
+    color: #555555;
+    width: 220px;
+  }
+  .c-sidebar .c-sidebar-nav-link, .c-sidebar .c-sidebar-nav-dropdown-toggle{
+    color: #333333
+  }
+  .c-sidebar .c-sidebar-nav-title{
+    color: #333333
+  }
+  .c-sidebar .c-sidebar-nav-link:hover, .c-sidebar .c-sidebar-nav-dropdown-toggle:hover{
+    background: #dddddd
+  }
+  .c-sidebar .c-sidebar-nav-link .c-sidebar-nav-icon, .c-sidebar .c-sidebar-nav-dropdown-toggle .c-sidebar-nav-icon{
+    color: #666666
+  }
+  .c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle{
+    color: #333333;
+    background: #f0f0f0;
+  }
+  .c-sidebar .c-sidebar-nav-link.c-active .c-sidebar-nav-icon, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle .c-sidebar-nav-icon{
+    color: #333333
+  }
+  .c-sidebar .c-sidebar-brand{//탑 레프트 아이콘 배경
+  background: #fdfdfd;
+  }
+
+  .c-sidebar .c-sidebar-minimizer {
+    background:rgba(0, 0, 21, 0.1);
+  }
+
+  @media (min-width: 992px){
+    html:not([dir="rtl"]) .c-sidebar.c-sidebar-lg-show:not(.c-sidebar-right).c-sidebar-fixed ~ .c-wrapper, html:not([dir="rtl"]) .c-sidebar.c-sidebar-show:not(.c-sidebar-right).c-sidebar-fixed ~ .c-wrapper
+    {
+      margin-left: 220px;;
+    }
+  }
+
+  .nav-tabs {
+    border-bottom: 0px solid;
+    border-color: #c4c9d0;
+  }
+  .nav-tabs .nav-link.navp {
+    background-color: #E4F1FA;
+    min-height: 100%;
+    padding : 1px;
+    font-size: 32px;
+    color:#9c9c9c;
+  }
+
+  .nav-tabs .nav-link.active{
+      color: #141414;
+      background-color: #fff;
+      border-color: rgb(226, 226, 226);
+      border-bottom: solid 0px ;
+  }
+
+  .nav-tabs .nav-link{
+    color:rgb(153, 153, 153);
+    background-color: rgb(240, 240, 240);
+    border:  solid 1px rgb(206, 206, 206);
+  }
+
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #318CFB;
+    border-color: #318CFB;
+}
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  border: 1px solid;
+  color: #318CFB;
+  background-color: #fff;
+  border-color: #d8dbe0;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #318CFB;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #141414;
+}
+a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #318CFB;
+}
+
+.col-xxl, .col-xxl-auto, .col-xxl-12, .col-xxl-11, .col-xxl-10, .col-xxl-9, .col-xxl-8, .col-xxl-7, .col-xxl-6, .col-xxl-5, .col-xxl-4, .col-xxl-3, .col-xxl-2, .col-xxl-1, .col-xl, .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1
+{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card {
+  border: 0;
+  border-radius: 10px;
+}
+.card-header {
+  border: 0;
+}
+.btn {
+  border-radius: 6px;
+  border: 0;
+}
+
+.parking-re {
+  color: #318CFB;
+  font-weight: 700;
+  text-align: right;
+}
+.parking-to {
+  color: #989898;
+  text-align: center;
+}
+.parking-box {
+  margin: 5;
+  padding: 14px 0px 14px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.parking-name {
+  font-weight: 700;
+  color: #141414;
+  text-align: left;
+}
+.modal-header {
+  border: 0;
+}
+.modal-content {
+  border: 0;
+  border-radius: 10px;
+}
+.modal-footer {
+  border: 0;
+}
+.status-parking {
+  color: #989898;
+  font-size: 11px;
+  text-align: right;
+}
+.react-datepicker__input-container .btn {
+  border: 1px solid #3399ff;
+}
